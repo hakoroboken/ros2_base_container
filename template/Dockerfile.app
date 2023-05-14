@@ -14,5 +14,7 @@
 
 FROM takanotaiga/ros_base:humble
 
+RUN apt update && apt upgrade -y && rosdep update
+
 COPY ./app_entrypoint.sh /usr/local/bin/scripts/
 RUN chmod +x /usr/local/bin/scripts/app_entrypoint.sh

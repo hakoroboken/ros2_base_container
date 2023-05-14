@@ -13,12 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# ---- Required scripts start ----
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source /opt/ros/humble/setup.bash
 
 echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
-sudo apt update
-sudo apt upgrade -y
-rosdep update
+# ---- Required scripts end ----
+# ---- User scripts start ----
+
+# ---- User scripts end ----
